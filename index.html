@@ -1,70 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Links Profile</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preload" href="assets/bg.jpg" as="image" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"> </script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"> </script>
-    <script type="text/javascript">
-        window.addEventListener("DOMContentLoaded", () => {
-        VANTA.BIRDS({
-            el: "#vanta",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: true,
-            minHeight: 200.0,
-            minWidth: 200.0,
-            scale: 1.0,
-            color1:0x8bff,
-            color2:0xff0099,
-            quantity: 3.0,
-            scaleMobile: 1.0,
-            backgroundAlpha: 0.0
-        });
-        setTimeout(() => {
-            const main = document.querySelector("main");
-            main.style.opacity = 1;
-            main.style.filter = "blur(0px)";
-        }, 1000);
-        });
-    </script>
-  </head>
-  <body>
-    <div id="vanta"></div>
-    <main class="animated">
-      <header>
-        <img src="assets/me.jpg" />
-        <h1>@aj7</h1>
-      </header>
-      <ul>
-        <li>
-          <a href="https://aj7.is-a.dev">
-            <img src="assets/homepage.svg" alt="Homepage" width="20" />
-            Official Website
-          </a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/@ajseven17">
-            <img src="assets/youtube.svg" alt="YouTube" width="20" />
-            Aj SEVEN
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/aj7_dev">
-            <img src="assets/twitter.svg" alt="Twitter" width="20" />
-            Twitter
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/Aj-Seven">
-            <img src="assets/github.svg" alt="GitHub" width="20" />
-            GitHub
-          </a>
-        </li>
-      </ul>
-    </main>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Links Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" href="assets/bg.jpg" as="image" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"> </script>
+  <script type="text/javascript">
+    window.addEventListener("DOMContentLoaded", () => {
+      VANTA.BIRDS({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: true,
+        birdSize: 1.2,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        color1: 0xff0000,
+        color2: 0x8af00,
+        quantity: 3.2,
+        scaleMobile: 1.0,
+        backgroundAlpha: 0.0
+      });
+      setTimeout(() => {
+        const main = document.querySelector("main");
+        main.style.opacity = 1;
+        main.style.filter = "blur(0px)";
+      }, 1000);
+    });
+  </script>
+</head>
+
+<body>
+  <div id="vanta"></div>
+  <main class="animated">
+    <header>
+      <img src="assets/me1.jpg" />
+      <h1>@aj7</h1>
+    </header>
+    <ul>
+      <li>
+        <a href="https://aj7.is-a.dev">
+          <img src="assets/homepage.svg" alt="Homepage" width="20" />
+          Official Website
+        </a>
+      </li>
+      <li>
+        <a href="https://roadmap.sh/u/ajseven">
+          <img
+            src="https://raw.githubusercontent.com/kamranahmedse/developer-roadmap/d6ee7ef76aaefa8059bd76fd160d40dcc6fec661/public/images/brand.svg"
+            alt="Roadmap" width="20" />
+          Roadmap
+        </a>
+      </li>
+      <li>
+        <a href="https://app.daily.dev/ajseven">
+          <img src="https://avatars.githubusercontent.com/u/41463883?s=200&v=4" alt="daily.dev" width="20" />
+          daily.dev
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/aj7_dev">
+          <img src="https://pbs.twimg.com/profile_images/1683501992314798080/xl1POYLw_400x400.jpg" alt="Twitter"
+            width="20" />
+          Twitter
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Aj-Seven">
+          <img src="assets/github.svg" alt="GitHub" width="20" />
+          GitHub
+        </a>
+      </li>
+    </ul>
+  </main>
+</body>
+
 </html>
